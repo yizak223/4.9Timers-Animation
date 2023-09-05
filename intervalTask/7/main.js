@@ -7,7 +7,6 @@ printBtn.addEventListener('click',strattt)
 restart.addEventListener('click',restartPrint)
 
 var printOn=false;
-// var theSecIsRising=true;
 var sec=0
 var printInterval;
 
@@ -15,12 +14,10 @@ function strattt() {
     if (printOn==false) {
        printInterval = setInterval(printUinWebsite,1000)
        printOn=true
-    //    theSecIsRising=true
     }
     else{
         clearInterval(printInterval)
         printOn=false
-        // theSecIsRising=true
     }
 }  
 
