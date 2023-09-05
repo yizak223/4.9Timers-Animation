@@ -1,8 +1,9 @@
-task6.innerHTML+=`
-<label for="AlarmClockInpt">set time to wake up</label>
-<input id='AlarmClockInpt' type="time">
-<button id="pauseStartButton">pause /continue </button>
- <p id='timeLeftToAlert'></p>
+task6.innerHTML+=
+`
+    <label for="AlarmClockInpt">set time to wake up</label>
+    <input id='AlarmClockInpt' type="time">
+    <button id="pauseStartButton">pause /continue </button>
+    <p id='timeLeftToAlert'></p>
 `
 console.log(AlarmClockInpt.value);
 pauseStartButton.addEventListener("click",startAndPauseCountDown)
@@ -16,7 +17,7 @@ function startAndPauseCountDown() {
     }
     else{//if the counter isn't on start him
         mainInterval = setInterval(printTime, 1000)
-        isCountDownActive = true;//mean now the counter is on the counter
+        isCountDownActive = true;//mean now he is on, the counter
     }
 }
 
